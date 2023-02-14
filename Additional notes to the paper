@@ -6,39 +6,39 @@
   May 4, 2022 and May 26, 2022. 380 gNBs are selected for training and the remaining 95 gNBs are for testing. Each gNB collects the real data of X, Y, 
   and T with a 15-minute sampling interval. Each gNB contains 2208 pieces of data, 475 gNBS are 1048800 pieces of data. There are 23 types of the observed
   data as X, of which 8 types are X_causal, 4 types of the handover-related COPs as T, and the number of RRC-connected users as Y.Details are as follows.
-  Indicator name |	Indicator Chinese name	| Indicator type
-  Number of intra frequency handover out attempts between eNodeB |	eNodeB间同频切换出尝试次数	| X_causal
-  Number of inter frequency outgoing handover attempts between eNodeB	| eNodeB间异频切换出尝试次数 |X_causal
-  Number of inter frequency handover out attempts within eNodeB	|eNodeB内异频切换出尝试次数|	X_causal
-  Number of intra frequency handover out attempts within eNodeB	|eNodeB内同频切换出尝试次数|	X_causal
-  Number of intra frequency handover out successful times between eNodeB	|eNodeB间同频切换出成功次数|	X_causal
-  Number of inter frequency handover out successful times between eNodeB	|eNodeB间异频切换出成功次数|	X_causal
-  Number of inter frequency handover out successful times within eNodeB	|eNodeB内异频切换出成功次数| X_causal
-  Number of intra frequency handover out successful times within eNodeB	|eNodeB内同频切换出成功次数|	X_causal
-  Average number of users in the cell	|小区内的平均用户数|	X
-  Average number of available PRB for PUSCH	|PUSCH可用PRB平均个数|	X
-  Number of available PRBs for uplink	|上行可用的PRB个数|	X
-  Average number of available PRBs for downlink	|下行Physical Resource Block被使用的平均个数|	X
-  Number of available PRBs for downlink	|下行可用的PRB个数|	X
-  Maximum number of active users	|最大激活用户数|	X
-  Total throughput of downlink data sent by the PDCP layer of the cell	|小区PDCP层所发送的下行数据的总吞吐量(比特)|	X
-  Total throughput of uplink data received by the PDCP layer of the cell	|小区PDCP层所接收到的上行数据的总吞吐量(比特)|	X
-  Azimuth	|方位角|	X
-  Ant_height	|天线挂高|	X
-  cell_machine_cor	|机械下倾角|	X
-  cell_ele_bend	|电下倾角|	X
-  Total dip	|总下倾角|	X
-  NMS acquisition frequency band	|网管采集频段|	X
-  frequency point number	|频点号|	X
-  Maximum number of RRC connections	|最大RRC连接用户数|	Y
-  average number of effective RRC connections	|有效RRC连接平均数|	Y
-  maximum number of effective RRC connections	|有效RRC连接最大数|	Y
-  upstream traffic M	|上行流量M|	Y
-  downstream traffic M	|下行流量M|	Y
-  INTERFREQHOA1THDRSRP	|INTERFREQHOA1THDRSRP|	T
-  INTERFREQHOA2THDRSRP	|INTERFREQHOA2THDRSRP|	T
-  REFERENCESIGNALPWR	|REFERENCESIGNALPWR	|T
-  INTERFREQHOA4THDRSRP	|INTERFREQHOA4THDRSRP	|T
+  Indicator name|	Indicator Chinese name| Indicator type
+  Number of intra frequency handover out attempts between eNodeB|	eNodeB间同频切换出尝试次数| X_causal
+  Number of inter frequency outgoing handover attempts between eNodeB| eNodeB间异频切换出尝试次数| X_causal
+  Number of inter frequency handover out attempts within eNodeB| eNodeB内异频切换出尝试次数|	X_causal
+  Number of intra frequency handover out attempts within eNodeB| eNodeB内同频切换出尝试次数|	X_causal
+  Number of intra frequency handover out successful times between eNodeB| eNodeB间同频切换出成功次数|	X_causal
+  Number of inter frequency handover out successful times between eNodeB| eNodeB间异频切换出成功次数|	X_causal
+  Number of inter frequency handover out successful times within eNodeB| eNodeB内异频切换出成功次数| X_causal
+  Number of intra frequency handover out successful times within eNodeB| eNodeB内同频切换出成功次数|	X_causal
+  Average number of users in the cell| 小区内的平均用户数|	X
+  Average number of available PRB for PUSCH| PUSCH可用PRB平均个数|	X
+  Number of available PRBs for uplink| 上行可用的PRB个数|	X
+  Average number of available PRBs for downlink| 下行Physical Resource Block被使用的平均个数|	X
+  Number of available PRBs for downlink| 下行可用的PRB个数|	X
+  Maximum number of active users| 最大激活用户数|	X
+  Total throughput of downlink data sent by the PDCP layer of the cell| 小区PDCP层所发送的下行数据的总吞吐量(比特)|	X
+  Total throughput of uplink data received by the PDCP layer of the cell| 小区PDCP层所接收到的上行数据的总吞吐量(比特)|	X
+  Azimuth| 方位角|	X
+  Ant_height| 天线挂高|	X
+  cell_machine_cor| 机械下倾角|	X
+  cell_ele_bend| 电下倾角|	X
+  Total dip| 总下倾角|	X
+  NMS acquisition frequency band| 网管采集频段|	X
+  frequency point number| 频点号|	X
+  Maximum number of RRC connections| 最大RRC连接用户数|	Y
+  average number of effective RRC connections| 有效RRC连接平均数|	Y
+  maximum number of effective RRC connections| 有效RRC连接最大数|	Y
+  upstream traffic M| 上行流量M|	Y
+  downstream traffic M| 下行流量M|	Y
+  INTERFREQHOA1THDRSRP| INTERFREQHOA1THDRSRP|	T
+  INTERFREQHOA2THDRSRP| INTERFREQHOA2THDRSRP|	T
+  REFERENCESIGNALPWR| REFERENCESIGNALPWR| T
+  INTERFREQHOA4THDRSRP| INTERFREQHOA4THDRSRP| T
 3.Experiment Setting Details.
   The Causal-Stable Deconstructor module in CSDnet is a multi-head self-attention network with 12 heads and 4 hidden layers. The decoder module has causal decoder 
   and stable decoder, with 12 heads and 4 hidden layers.The hidden vector dimensions of both modules are 768. We train CSDnet for 50 epochs using the Adam optimizer 
