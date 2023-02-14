@@ -43,3 +43,7 @@
   The Causal-Stable Deconstructor module in CSDnet is a multi-head self-attention network with 12 heads and 4 hidden layers. The decoder module has causal decoder 
   and stable decoder, with 12 heads and 4 hidden layers.The hidden vector dimensions of both modules are 768. We train CSDnet for 50 epochs using the Adam optimizer 
   with a batch size of 16 and a learning rate of 5e-5.The dropout rate is set to 0.1. We implement the proposed CSDnet model with the PyTorch framework and Python3.
+4.Future Work.
+  In the future, we would like to do more experiments to prove the effectiveness of causal decode and stable decoder, for example, ablation study, support downstream
+  tasks respectively, etc.In addition, we will explore more optimization schemes to evolve support decision into automatic decision.
+
